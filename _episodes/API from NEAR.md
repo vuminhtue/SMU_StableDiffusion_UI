@@ -98,13 +98,18 @@ import os
 import json
 
 url = "https://uberretailapi.uberads.com/v1/uberretailapi/createJobWithFile"
-headers = {'Authorization': 'Bearer xxxxxxx'}    
+headers = {'Authorization': 'Bearer ********'}    
 j=0
 n=1
-dir1 = '/home/tuev/Projects/Makris/GIS/zip/test/'
+dir1 = '/work/group/makris_lab/GIS/shapefile_zip/DFW/'
 listfile = os.listdir(dir1)
 while j<=len(listfile)-1:    
-    dict1 = dict({"pipReportType":"PIN_REPORT","reportName":f"{listfile[j]}","polygonInputOptions": { "polygonFormat": "ESRI_SHAPEFILE_ZIP","polygonNameAliasElement": "PageName" },"startDateTime": "2021-01-01 00:00:00","endDateTime": "2021-03-31 23:59:59"})
+    dict1 = dict({"pipReportType":"PIN_REPORT",
+                  "reportName":f"{listfile[j]}",
+                  "polygonInputOptions": { "polygonFormat": "ESRI_SHAPEFILE_ZIP","polygonNameAliasElement": "PageName" },
+                  "startDateTime": "2021-03-01 00:00:00",
+                  "endDateTime": "2021-03-31 23:59:59"})
+    
     payload = {'jsonRequest':str(dict1).replace("'",'"')}
     files=[('polygonFile',(f"{listfile[j]}",open(f'{dir1}{listfile[j]}','rb'),'application/zip'))]    
     response = requests.request("POST", url, headers=headers, data=payload, files=files)            
