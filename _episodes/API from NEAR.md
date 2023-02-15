@@ -1,19 +1,19 @@
 ---
-title: "Downloading data with with NEAR using API"
+title: "Uploading GIS file to request download from NEAR using API"
 teaching: 5 min
 exercises: 0
-questions: "How to download data from website using API?"
+questions: "How to upload GIS data to NEAR website using API?"
 objectives:
 
 keypoints:
-- "Postman, Python, API"
+- "Postman, Python, API, upload"
 ---
 
 
 
 
 ## Introduction
-- Sometime, we need to use API to download the data from website when there are so many files and options to download.
+- Sometime, we need to use API to upload GIS data to website to request files when there are so many files and options to download.
 - You can download data from Twitter, YouTube, Google etc using API. However you will need to register with the provider and get the API key or Bearer Token.
 - This is an actual project where we will be downloading data from near website vista.um.co, with given username/password and API token.
 
@@ -90,7 +90,7 @@ The start and end DateTime can be altered
 
 - In order to do the automation, we need to modify the input information, such as report name, zip file name, zip file location 
 - Here we do everything in ManeFrame M2 supercomputer, the GIS shapefiles are uploaded to home directory.
-- Following is the python code:
+- Following is the python code to upload shapefile in requested zip format to NEAR website and create the jobs ready for download:
 
 ```python
 import requests
@@ -123,16 +123,3 @@ while j<=len(listfile)-1:
 ```
 
 - Note that due to the near server, sometime not being able to import GIS file, so we need to resubmit if it failed. It is represented as the for while loop.
-
-## Download the submitted jobs:
-
-Using OnDemand web portal (Remote Desktop) and open Firefox, 
-Go to near.com website and signin using Nicos's username & password then to retrieve the submitted jobs:
-
-```
-https://vista.um.co/users/sign_in
-```
-
-Check if your job has spawned the report or not to download to M2 directory:
-
-![image](https://user-images.githubusercontent.com/43855029/196506189-515b42bd-127d-4f0a-a0d3-c32b886cd66d.png)
