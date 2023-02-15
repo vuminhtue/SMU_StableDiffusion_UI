@@ -1,5 +1,5 @@
 ---
-title: "Using Jupyter Lab in SuperPOD"
+title: "Tunneling Jupyter Lab in SuperPOD"
 teaching: 20
 exercises: 0
 questions:
@@ -10,7 +10,7 @@ keypoints:
 - "Jupter Lab, Port-Forwarding"
 ---
 
-# 3. Jupter Lab on SuperPOD
+# Jupter Lab on SuperPOD
 
 - There is no display config and Open OnDemand setup in SuperPOD, so it is not quite straighforward to use Jupter Lab
 
