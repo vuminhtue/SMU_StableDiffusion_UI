@@ -1,4 +1,6 @@
-# SMU SUPERPOD 101
+# SMU Research Computing
+
+Tips and Tricks for some API usage on SMU HPC M2, M3 and SuperPOD
 
 ## Maintainer(s)
 
