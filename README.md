@@ -4,8 +4,11 @@ How to install Stable Diffusion on ManeFrame 3 and use NVIDIA V100 GPU to genera
 The topic covers the installation of:
 
   (1) Automatic1111
+  
   (2) ComfyUI
+  
   (3) InvokeAI
+  
   (4) Fooocus
 
 ## Maintainer(s)
