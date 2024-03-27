@@ -1,6 +1,6 @@
-# SMU Research Computing
+# SMU Stable Diffusion on ManeFrame 3
 
-Tips and Tricks for some API usage on SMU HPC M2, M3 and SuperPOD
+How to install Stable Diffusion on ManeFrame 3 and use NVIDIA V100 GPU to generate images
 
 ## Maintainer(s)
 
