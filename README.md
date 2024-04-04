@@ -1,6 +1,11 @@
 # Stable Diffusion on SMU HPC
+There are 2 main HPC systems at SMU, powered by NVIDIA GPU:
+- The ManeFrame 3: equipped with V100 (32gb), running under gpu-dev queue have the limited walltime of 2 hours
+- The SuperPOD: equipped with A100 (82gb), have much longer walltime at 12 hours.
+While it is straightforward to use Stable Diffusion UI directly using Virtual Desktop on ManeFrame 3, you also have an option to use the UI on SuperPOD using port-forwarding technique.
 
-How to install Stable Diffusion on to ManeFrame 3 and SuperPOD and use NVIDIA V100/A100 GPU to generate images.
+This material introduces both methods on how to install and run your Stable Diffusion UI on M3 and SPOD.
+
 The topic covers the installation of:
 
   (1) Automatic1111
@@ -10,6 +15,8 @@ The topic covers the installation of:
   (3) InvokeAI
   
   (4) Fooocus
+
+on ManeFrame 3 and SuperPOD
 
 ## Maintainer(s)
 
