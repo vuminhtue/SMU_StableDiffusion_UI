@@ -1,6 +1,6 @@
-# SMU Stable Diffusion on ManeFrame 3
+# Stable Diffusion on SMU HPC
 
-How to install Stable Diffusion on ManeFrame 3 and use NVIDIA V100 GPU to generate images.
+How to install Stable Diffusion on to ManeFrame 3 and SuperPOD and use NVIDIA V100/A100 GPU to generate images.
 The topic covers the installation of:
 
   (1) Automatic1111
