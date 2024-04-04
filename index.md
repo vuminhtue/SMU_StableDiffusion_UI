@@ -10,7 +10,7 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 > - **Email**: tuev@smu.edu
 {: .prereq}
 
-> ## Stable Diffusion UI on SMU ManeFrame 3
+> ## Stable Diffusion UI on SMU HPC
 
 
 
